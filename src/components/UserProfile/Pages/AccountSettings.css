@@ -1,0 +1,87 @@
+.accountSettings{
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; 
+}
+
+
+.accountSettings h1{
+    padding: 10px 20px;
+}
+
+
+.accountSettings .form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.accountSettings .form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+}
+
+.accountSettings .form .form-group label{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.accountSettings .form .form-group input{
+    padding: 10px 20px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    outline: none;
+} 
+
+.accountSettings .form .form-group input:focus{
+    border: 1px solid var(--col1);
+}
+
+.logousuario{
+    color:#456884;
+    font-size: 100px;
+    position: relative;
+   
+    
+
+}
+
+
+@media (max-width: 800px){
+    .accountSettings .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .accountSettings .form .form-group{
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        margin: 10px;
+    }
+    .accountSettings h1{
+        font-size: 20px;
+    }
+    .accountSettings .form .form-group label{
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+} 
+
+.userlogo{
+    color:#456884;
+    font-size: 100px;
+    
+}
