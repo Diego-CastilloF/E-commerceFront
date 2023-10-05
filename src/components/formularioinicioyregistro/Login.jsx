@@ -1,6 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
-import { SignupShowPw, ConfirmPassword, ShowHidePw } from './SignupShowPw.jsx';
 import './login.css';
 const backendUrl = import.meta.env.VITE_REACT_APP_BACKEND_URL;
 
@@ -34,6 +33,10 @@ function Login({ open, onClose }) {
   useEffect(() => {
     if (open) {
       setIsActive(open);
+      setIsLogin(true);  // Asegurarse de que el formulario de inicio de sesión esté activo cuando se abre el popup
+    } else {
+      setIsActive(true); // Restablecer a sus valores iniciales cuando el popup se cierra
+      setIsLogin(true);  // Restablecer a sus valores iniciales cuando el popup se cierra
     }
   }, [open]);
 

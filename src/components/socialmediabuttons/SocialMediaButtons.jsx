@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { dataContext } from "../MarketPlace/Context/DataContext";
 import "../componentsCSS/botones.css";
 import CartElements from "../MarketPlace/CartContent/CartElements";
@@ -35,6 +35,7 @@ function SocialMediaButtons() {
           href="https://www.instagram.com/taller_design_chile/"
           target="_blank"
           className="instagram"
+          rel="noreferrer"
         >
           <i className="fa fa-instagram" aria-hidden="true"></i>
         </a>
@@ -48,6 +49,7 @@ function SocialMediaButtons() {
         <a
           href="https://www.instagram.com/taller_design_chile/"
           target="_blank"
+          rel="noreferrer"
           className="instagram opacity-0"
           disabled
         >
